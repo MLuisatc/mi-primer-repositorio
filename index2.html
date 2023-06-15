@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Mª Luisa Trassierra -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Actividades del libro</title>
+</head>
+<body>
+    <main>    
+    <div class="header">
+        <img id="logo" src="assets/logo.PNG" class="logo" alt="logo_grupo_c" >
+        <h1>ACTIVIDADES DEL LIBRO</h1>
+        <nav>
+            <ul>
+                <li><a id="nav1" >Actividad 3</a></li>
+                <li><a id="nav2" >Actividad 4</a></li>
+                <li><a id="nav3" >Actividad 6</a></li>
+                <li><a id="nav4" >Actividad 7</a></li>
+                <li><a id="nav5" >Actividad 10</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="container">
+            <section class="ej" id="3" hidden>
+                <h2>ACTIVIDAD 3</h2>
+                <section class="enunciado">
+                    <h3>ENUNCIADO</h3>
+                    -Escribe una página que contenga: <br>
+                    ·Un vínculo a una página de tu elección. <br>
+                    ·Una casilla de verificación. <br>
+                    A continuación escribe el código JavaScript necesario para que, cuando la casilla este marcada, el vínculo
+                    se
+                    abra en ventana nueva y, cuando no, en la misma ventana.
+                </section>
+                <section class="realizacion">
+                    <h3>REALIZACIÓN</h3>
+                    <button><a id="act3" href="https://www.blender.org/">IR A LA PÁGINA</a></button> <br>
+                    <input id="casilla" type="checkbox">Marque esta casilla para abrir el enlace en una nueva ventana.
+                </section>
+            </section> 
+            <section class="ej" id="4" hidden>
+            <h2>ACTIVIDAD 4</h2>
+            <section class="enunciado">
+                <h3>ENUNCIADO</h3>
+                -Escribe una página que contenga: <br>
+                ·Una imagen. <br>
+                ·Dos botones, uno para ocultar la imagen y otro para mostrarla.
+            </section>
+            <section class="realizacion">
+                <h3>REALIZACÓN</h3>
+                <img id="imagen" src="assets/logo.PNG" alt="logo_grupo_c" width="200px" height="200px"> <br>
+                <button id="ocultar">OCULTAR</button>
+                <button id="mostrar">MOSTRAR</button>
+            </section>
+        </section>      
+        <section class="ej" id="6" hidden>
+            <h2>ACTIVIDAD 6</h2>
+            <section class="enunciado">
+                <h3>ENUNCIADO</h3>
+                -Escribe una página con: <br>
+                ·Un campo de texto. <br>
+                ·Un botón. <br>
+                Al pulsar el botón debe cambiar el color de fondo de la página indicado en el campo de texto.
+            </section>
+            <section class="realizacion">
+                <h3>REALIZACIÓN</h3>
+                <input id="color" type="text" placeholder="Introduzca un color">
+                <button id="boton6">CAMBIAR FONDO</button>
+            </section>
+        </section>        
+        <section class="ej" id="7" hidden>
+            <h2>ACTIVIDAD 7</h2>
+            <section class="enunciado">
+                <h3>ENUNCIADO</h3>
+                -Escribe una pagina con:<br>
+                ·Una lista desplegable con los valores'red','blue'y 'yellow'. <br>
+                Al cambiar el valor seleccionado en la lista debe cambiar el co.or de fondo de la pagina.
+            </section>
+            <section class="realizacion">
+                <h3>REALIZACIÓN</h3>
+                <select id="lista">
+                    <option value="">Selecciona un color</option>
+                    <option class="select" value="red">Rojo</option>
+                    <option value="blue">Azul</option>
+                    <option value="yellow">Amarillo</option>
+                </select>
+            </section>
+        </section>       
+        <section class="ej" id="10" hidden>
+            <h2>ACTIVIDAD 10</h2>
+            <section class="enunciado">
+                <h3>ENUNCIADO</h3>
+                -Escribe una página que contenga un formulario con las siguientes características: <br>
+                Pide al usuario su nombre, su edad y su NIF. <br>
+                Al pulsar el botón de envio, se deben realizar las siguientes comprobaciones: <br>
+                ·No hay ningún campo vacío. <br>
+                ·La edad es un numero y esta entre 18 y 120. <br>
+                ·El NIF riene 10 carácteres y uno de ellos es un guion ("-"). <br>
+                ·Si hay algun error, hay que mostrar la usuario una alarma con un mensaje adecuado al error concreto que
+                ha
+                ocurrido. <br>
+                ·Si todo va bien, los datos del formulario se pasan al falso.php mediante el método "GET". Si hay algún
+                errror
+                en los datos, no se llama a falso.php.
+            </section>
+            <section class="realizacion">
+                <h3>REALIZACIÓN</h3>
+                <form action="falso.php" method="get" onsubmit="return validarFormulario()">
+                    <label>Nombre</label>
+                    <input id="nombre" type="text" placeholder="Escriba su nombre"><br>
+                    <label>Edad</label>
+                    <input id="edad" type="text" placeholder="Escriba su edad"><br>
+                    <label>NIF</label>
+                    <input id="nif" type="text" placeholder="Escriba su NIF"><br>
+                    <button id="boton10" type="submit">ENVIAR</button>
+                </form>
+            </section>
+        </section>
+    </div>
+
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script.js"></script>
+
+</html>

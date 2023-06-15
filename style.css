@@ -1,0 +1,79 @@
+/* Mª Luisa Trassierra */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background-image: url(assets/fondo.jpg);
+}
+
+/* NAVBAR */
+
+.header {
+    display: inline-flex;
+    align-items: center;
+    padding: 1%;
+    width: 100%;
+}
+
+nav {
+    width: 55%;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5em;
+}
+
+h1 {
+    width: 40%;
+}
+
+ul {
+    list-style: none;    
+    display: inline-flex;
+}
+
+ul li {
+    border-radius: 4px;
+    padding: 10px;
+}
+
+ul li a {
+    transition: all 0.3s ease 0s;
+    color: #24252a;
+}
+ul li:hover{
+    background-color: #126ca3;
+}
+
+li:hover a {
+    color: white;
+  }
+
+/* CONTAINER */
+
+main {
+    background-color: rgba(255, 255, 255, 0.833);
+    background-image: url(assets/imagen.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 2em);
+    background-position-y: calc(100% - 3em);
+    margin: 2% 9%;
+    border-radius: 1em;
+    height: 35em;
+    padding: 1em;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+section{
+    margin-bottom: 1em;
+}
+
+.ej {
+    width: 55%;
+    padding: 1em;
+}
